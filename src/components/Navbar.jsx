@@ -39,6 +39,8 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
+        <div className="max-sm:flex max-sm:flex-row-reverse max-sm:justify-between max-sm:w-50 md:flex md:w-full md:justify-between md:ml-60">
+
         <nav className="hidden md:flex space-x-8 items-center">
           {["Home", "About", "Timeline", "Sponsor", "FAQ", "Gallery"].map((item) => (
             <a
@@ -60,7 +62,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="md:hidden "
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -80,7 +82,7 @@ export const Navbar = () => {
         
         </div>
       </div>
-
+      </div>
       {/* Mobile Menu */}
       {menuOpen && (
         <motion.nav
@@ -108,7 +110,9 @@ export const Navbar = () => {
             Register
           </motion.button>
         </motion.nav>
+        
       )}
     </motion.header>
+    
   );
 };
