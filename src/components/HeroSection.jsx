@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 ">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-10 ">
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white z-0"></div>
 
       <div className="container mx-auto px-4 z-10 text-center">
@@ -16,19 +16,19 @@ export const HeroSection = () => {
         >
         <img src="almatronlogo.png" alt="kk" className=" size-28 m-auto"/>
           <motion.h1
-            className="text-6xl md:text-8xl font-bold text-blue-700 mb-6"
+            className="text-5xl md:text-8xl font-bold text-blue-700 mb-6 md:mb-0"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <p className=" text-3xl">ALMATRON <span className=" font-extralight text-gray-500 text-2xl">Presents..</span></p>
             <span class="ama">
-           CYPHERQUEST2025
+           CYPHERQUEST 2025
             </span>
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-blue-600 mb-12"
+            className="text-xl md:text-2xl text-blue-600 mb-12 md:mb-1"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -52,7 +52,7 @@ export const HeroSection = () => {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-10 md:bottom-1 left-1/2 transform -translate-x-1/2 z-10">
         <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}>
           <a href="#about" className="text-blue-600 flex flex-col items-center">
             <span className="mb-2">Scroll Down</span>
