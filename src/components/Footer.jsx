@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Twitter, Facebook, Instagram, Linkedin, Icon, MailIcon, PhoneIcon, Locate, LandmarkIcon } from "lucide-react";
-
+import { Map } from "./Map";
 export const Footer = () => {
   const socialLinks = [
     { name: "Instagram", icon: <Instagram className="h-6 w-6" />, link: "https://instagram.com/almatron.ai" },
@@ -66,8 +66,9 @@ export const Footer = () => {
       <span>+91 9019966793</span>
     </li>
     <li className="flex items-center space-x-2">
-      <LandmarkIcon />
-      <span>DSATM, Kanakpura road Bengaluru</span>
+      {/* <LandmarkIcon />
+      <span>DSATM, Kanakpura road Bengaluru</span> */}
+      <Map/>
     </li>
   </ul>
 </div>
